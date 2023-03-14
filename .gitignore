@@ -17,5 +17,5 @@ node_modules/
 .env.test
 
 # Build
-packages/*/lib
+packages/*/dist
 shared/*/lib
