@@ -21,6 +21,8 @@
     },
     "scripts": {
         "build": "npm run typescript:build",
+        "ui": "yarn workspace @template/parte-ui",
+        "build-monorepo": "yarn workspaces foreach -ptR --from \"{@template/components,@template/parte-icons}\" run build && yarn ui build",
         "watch": "npm run typescript:watch",
         "clean": "npm run typescript:clean",
         "test": "npm run lint:eslint && npm run test:jest",
