@@ -9,8 +9,6 @@
             "types": "./lib/index.d.ts"
         }
     },
-    "dependencies": {},
-    "devDependencies": {},
     "peerDependencies": {
         "@template/shared-template": "*"
     },

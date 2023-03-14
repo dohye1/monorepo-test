@@ -8,7 +8,6 @@
   "files": [
     "/dist"
   ],
-  "dependencies": {},
   "scripts": {
     "start": "start-storybook -p 6006",
     "lint-fix": "eslint ./src --fix",
@@ -22,11 +21,11 @@
     "chromatic": "chromatic --exit-zero-on-changes"
   },
   "peerDependencies": {
+    "@template/parte-icons": "*",
+    "@template/shared-template": "*",
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0",
-    "styled-components": ">= 5.3.3",
-    "@template/shared-template": "*",
-    "@template/parte-icons": "*"
+    "styled-components": ">= 5.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
