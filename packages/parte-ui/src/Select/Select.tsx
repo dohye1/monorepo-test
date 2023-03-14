@@ -20,10 +20,10 @@ import StaticSelect, {
   MenuProps,
   MenuListProps,
 } from 'react-select';
-import InterfaceCaretDownIcon from '../parte-icons/Icons/InterfaceCaretDownIcon';
-import ActionSearchIcon from '../parte-icons/Icons/ActionSearchIcon';
-import ActionSmallCrossIcon from '../parte-icons/Icons/ActionSmallCrossIcon';
-import ActionDeleteIcon from '../parte-icons/Icons/ActionDeleteIcon';
+import InterfaceCaretDownIcon from '@template/parte-icons/src/Icons/InterfaceCaretDownIcon';
+import ActionSearchIcon from '@template/parte-icons/src/Icons/ActionSearchIcon';
+import ActionSmallCrossIcon from '@template/parte-icons/src/Icons/ActionSmallCrossIcon';
+import ActionDeleteIcon from '@template/parte-icons/src/Icons/ActionDeleteIcon';
 import {
   ComponentType,
   KeyboardEventHandler,

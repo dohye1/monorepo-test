@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { IconColor } from '../parte-icons/component/Icon';
+import { IconColor } from '@template/parte-icons/src/common/Icon';
 import { IconButtonProps } from './IconButton.types';
 
 const commonButtonStyles = css<Omit<IconButtonProps, 'Icon'>>`

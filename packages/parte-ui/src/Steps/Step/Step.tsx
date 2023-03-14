@@ -1,4 +1,4 @@
-import ActionTickIcon from '../../parte-icons/Icons/ActionTickIcon';
+import ActionTickIcon from '@template/parte-icons/src/Icons/ActionTickIcon';
 import * as Styled from './Step.styled';
 import { StepProps, StepStatus } from './Step.types';
 

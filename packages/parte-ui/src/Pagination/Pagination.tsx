@@ -1,8 +1,8 @@
 import { useCallback } from 'react';
 import * as Styled from './Pagination.styled';
 import { PaginationProps } from './Pagination.types';
-import InterfaceChevronLeftIcon from '../parte-icons/Icons/InterfaceChevronLeftIcon';
-import InterfaceChevronRightIcon from '../parte-icons/Icons/InterfaceChevronRightIcon';
+import InterfaceChevronLeftIcon from '@template/parte-icons/src/Icons/InterfaceChevronLeftIcon';
+import InterfaceChevronRightIcon from '@template/parte-icons/src/Icons/InterfaceChevronRightIcon';
 import { Box } from '../Layout';
 import { Heading } from '../@foundations/Typography';
 import { IconButton } from '../IconButton';

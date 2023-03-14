@@ -1,9 +1,9 @@
 import TextInput from './TextInput';
 import { Story, Meta } from '@storybook/react';
 import { TextInputProps } from './TextInput.types';
-import ActionSearchIcon from '../parte-icons/Icons/ActionSearchIcon';
-import InterfaceCaretDownIcon from '../parte-icons/Icons/InterfaceCaretDownIcon';
-import ActionCrossIcon from '../parte-icons/Icons/ActionCrossIcon';
+import ActionSearchIcon from '@template/parte-icons/src/Icons/ActionSearchIcon';
+import InterfaceCaretDownIcon from '@template/parte-icons/src/Icons/InterfaceCaretDownIcon';
+import ActionCrossIcon from '@template/parte-icons/src/Icons/ActionCrossIcon';
 
 export default {
   title: 'Components/Forms/TextInput',

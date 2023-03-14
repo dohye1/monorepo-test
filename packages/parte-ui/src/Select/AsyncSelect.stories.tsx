@@ -8,7 +8,7 @@ import {
 import Select from './Select';
 import { AsyncSelectProps, SelectAdditional } from './Select.types';
 import { useState } from 'react';
-import ActionAddIcon from '../parte-icons/Icons/ActionAddIcon';
+import ActionAddIcon from '@template/parte-icons/src/Icons/ActionAddIcon';
 
 export default {
   title: 'Components/Select/AsyncSelect',

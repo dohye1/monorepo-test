@@ -3,7 +3,7 @@ import { MultiValue, SingleValue } from 'react-select';
 import Select from './Select';
 import { StaticSelectProps } from './Select.types';
 import { useState } from 'react';
-import ActionAddIcon from '../parte-icons/Icons/ActionAddIcon';
+import ActionAddIcon from '@template/parte-icons/src/Icons/ActionAddIcon';
 
 export default {
   title: 'Components/Select/StaticSelect',

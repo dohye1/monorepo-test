@@ -1,6 +1,6 @@
 import * as Styled from './Tag.styled';
 import { TagProps } from './Tag.types';
-import ActionSmallCrossIcon from '../../parte-icons/Icons/ActionSmallCrossIcon';
+import ActionSmallCrossIcon from '@template/parte-icons/src/Icons/ActionSmallCrossIcon';
 import { Paragraph } from '../../@foundations/Typography';
 
 function Tag({ tag, onRemove }: TagProps) {

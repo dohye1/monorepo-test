@@ -1,9 +1,9 @@
 import Menu from './Menu';
 import { Story, Meta } from '@storybook/react';
 import { MenuProps } from './Menu.types';
-import ActionChatIcon from '../parte-icons/Icons/ActionChatIcon';
-import ActionRefreshIcon from '../parte-icons/Icons/ActionRefreshIcon';
-import ActionCrossIcon from '../parte-icons/Icons/ActionCrossIcon';
+import ActionChatIcon from '@template/parte-icons/src/Icons/ActionChatIcon';
+import ActionRefreshIcon from '@template/parte-icons/src/Icons/ActionRefreshIcon';
+import ActionCrossIcon from '@template/parte-icons/src/Icons/ActionCrossIcon';
 import { useState } from 'react';
 
 export default {
