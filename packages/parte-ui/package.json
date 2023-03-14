@@ -25,7 +25,8 @@
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0",
     "styled-components": ">= 5.3.3",
-    "@template/shared-template": "*"
+    "@template/shared-template": "*",
+    "@template/parte-icons": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",

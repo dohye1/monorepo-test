@@ -4,11 +4,10 @@
         "noEmit": true,
         "baseUrl": ".",
         "paths": {
-            "@parte-icons/*": ["./packages/parte-icons/src/"],
             "@template/*": [
                 "./shared/*/src",
-                "./packages/parte-ui/src/index",
-                "./packages/parte-icons/src/index"
+                "./packages/parte-ui/src",
+                "./packages/parte-icons/src"
             ]
         }
     }

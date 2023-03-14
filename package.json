@@ -1,10 +1,10 @@
 {
     "private": true,
+    "version": "0.0.1",
     "workspaces": [
         "packages/*",
         "shared/*"
     ],
-    "type": "module",
     "devDependencies": {
         "@types/jest": "^28.1.1",
         "@types/node": "^17.0.42",
