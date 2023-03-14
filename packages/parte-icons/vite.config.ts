@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+
 const pkg = require('./package.json');
 // 노드 모듈에서 다른 확장자를 읽어 올 수 있게해줌 우리같은경우 TS를 사용하니까 js 모듈을 사용하려고하면 필요함 근데 우리가 쓰는건 대부분 ts지 않나 싶음
 import resolve from '@rollup/plugin-node-resolve';
@@ -13,23 +14,29 @@ import dts from 'vite-plugin-dts';
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default defineConfig({
-  plugins: [
-    dts({
-      include: ['src/'],
-    }),
-    react(),
-  ],
-  build: {
-    lib: {
-      entry: path.resolve('src', 'index.ts'),
-      name: 'parte-icons',
-      formats: ['es', 'umd'],
-      fileName: (format) => `index.${format}.js`,
+    plugins: [
+        dts({
+            include: ['src/'],
+        }),
+        react(),
+    ],
+    optimizeDeps: {
+        include: ['@template/parte-icons', '@template/foundation'],
     },
-    rollupOptions: {
-      // external: 라이브러리에 포함하지 않을 디펜던시를 명시해주세요
-      external: [...Object.keys(pkg.peerDependencies)],
-      plugins: [resolve({ extensions }), json()],
+    build: {
+        lib: {
+            entry: path.resolve('src', 'index.ts'),
+            name: 'parte-icons',
+            formats: ['es', 'umd'],
+            fileName: (format) => `index.${format}.js`,
+        },
+        rollupOptions: {
+            // external: 라이브러리에 포함하지 않을 디펜던시를 명시해주세요
+            external: [...Object.keys(pkg.peerDependencies)],
+            plugins: [resolve({ extensions }), json()],
+        },
+        commonjsOptions: {
+            include: [/lib-cjs/, /node_modules/],
+        },
     },
-  },
 });

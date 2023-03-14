@@ -5,10 +5,12 @@
         "baseUrl": ".",
         "paths": {
             "@template/*": [
-                "./shared/*/src",
+                // "./shared/*/src",
+                "./shared/foundation/src",
                 "./packages/parte-ui/src",
                 "./packages/parte-icons/src"
-            ]
+            ],
+            "@parte/foundation/*": ["./shared/foundation/src"]
         }
     }
 }

@@ -13,6 +13,9 @@
 		},
 		{
 			"path": "packages/parte-ui/tsconfig.package.json"
+		},
+		{
+			"path": "shared/foundation/tsconfig.package.json"
 		}
 	]
 }

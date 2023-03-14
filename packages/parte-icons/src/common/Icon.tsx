@@ -1,5 +1,6 @@
 import React, { CSSProperties, DetailedHTMLProps } from 'react';
-import { COLORS } from '../@foundations/Colors/index';
+import { COLORS } from '../@foundations/Colors';
+// import {colors} from '@template/foundation/src'
 
 type Status = 'success' | 'info' | 'warning' | 'error';
 

@@ -1,23 +1,15 @@
-import {
-    join as pathJoin,
-    relative as pathRelative
-} from 'node:path';
-import {
-    writeFileSync,
-    readFileSync,
-    readdirSync,
-    lstatSync
-} from 'node:fs';
-import { fileURLToPath } from 'node:url';
+import { join as pathJoin, relative as pathRelative } from "node:path";
+import { writeFileSync, readFileSync, readdirSync, lstatSync } from "node:fs";
 
 enum ConfigFilename {
-    PACKAGE = 'package.json',
-    BASE_TSCONFIG = 'tsconfig.base.json',
-    PACKAGE_TSCONFIG = 'tsconfig.package.json',
-    PROJECT_TSCONFIG = 'tsconfig.project.json'
+    PACKAGE = "package.json",
+    BASE_TSCONFIG = "tsconfig.base.json",
+    PACKAGE_TSCONFIG = "tsconfig.package.json",
+    PROJECT_TSCONFIG = "tsconfig.project.json",
 }
 
-const TSCONFIG_HEADER = '// File generated automatically, use npm run update:tsconfig for update\n';
+const TSCONFIG_HEADER =
+    "// File generated automatically, use npm run update:tsconfig for update\n";
 
 interface IPackageJSON {
     name: string;
@@ -27,40 +19,32 @@ interface IPackageJSON {
     peerDependencies: Record<string, string>;
 }
 
-const readJSON = <T>(path: string): T => (
-    JSON.parse(
-        readFileSync(path, 'utf8')
-    )
-);
+const readJSON = <T>(path: string): T => JSON.parse(readFileSync(path, "utf8"));
 
 const writeTsconfig = <T>(path: string, data: T): void => {
-    writeFileSync(path, TSCONFIG_HEADER + JSON.stringify(data, undefined, '\t'));
+    writeFileSync(
+        path,
+        TSCONFIG_HEADER + JSON.stringify(data, undefined, "\t")
+    );
 };
 
-const rootPath = fileURLToPath(new URL('..', import.meta.url));
+const rootPath = __dirname.substring(0, __dirname.lastIndexOf("/") + 1);
 
 const rootPackage = readJSON<IPackageJSON>(
     pathJoin(rootPath, ConfigFilename.PACKAGE)
 );
 
 const workspacePaths = rootPackage.workspaces
-    .map(workspaceDirectory => (
-        workspaceDirectory.replace('/*', '')
-    ))
-    .map(workspaceDirectory => (
-        pathJoin(rootPath, workspaceDirectory)
-    ));
+    .map((workspaceDirectory) => workspaceDirectory.replace("/*", ""))
+    .map((workspaceDirectory) => pathJoin(rootPath, workspaceDirectory));
 
 const packageDirectories = workspacePaths
-    .flatMap(workspacePath => (
-        readdirSync(workspacePath)
-            .map(packageDirectory => (
-                pathJoin(workspacePath, packageDirectory)
-            ))
-    ))
-    .filter(packageDirectory => (
-        lstatSync(packageDirectory).isDirectory()
-    ));
+    .flatMap((workspacePath) =>
+        readdirSync(workspacePath).map((packageDirectory) =>
+            pathJoin(workspacePath, packageDirectory)
+        )
+    )
+    .filter((packageDirectory) => lstatSync(packageDirectory).isDirectory());
 
 const packagePathMap = new Map<string, string>();
 const packageJSONMap = new Map<string, IPackageJSON>();
@@ -82,26 +66,26 @@ for (const [packageName, packageJSON] of packageJSONMap.entries()) {
     const allDependencies = [
         ...Object.keys(packageJSON.dependencies || {}),
         ...Object.keys(packageJSON.devDependencies || {}),
-        ...Object.keys(packageJSON.peerDependencies || {})
+        ...Object.keys(packageJSON.peerDependencies || {}),
     ];
 
-    const internalDependencies = allDependencies.filter(dependencyName => (
+    const internalDependencies = allDependencies.filter((dependencyName) =>
         packageJSONMap.has(dependencyName)
-    ));
+    );
 
     internalDependencyMap.set(packageName, internalDependencies);
 }
 
-const resolveInternalDependencies = (dependencies: string[]): string[] => (
-    [...new Set([
-        ...dependencies.flatMap(dependency => {
+const resolveInternalDependencies = (dependencies: string[]): string[] => [
+    ...new Set([
+        ...dependencies.flatMap((dependency) => {
             const internalDependencies = internalDependencyMap.get(dependency)!;
 
             return resolveInternalDependencies(internalDependencies);
         }),
-        ...dependencies
-    ])]
-);
+        ...dependencies,
+    ]),
+];
 
 for (const [packageName, packagePath] of packagePathMap.entries()) {
     const tsconfigPath = pathJoin(packagePath, ConfigFilename.PACKAGE_TSCONFIG);
@@ -116,22 +100,22 @@ for (const [packageName, packagePath] of packagePathMap.entries()) {
             ConfigFilename.BASE_TSCONFIG
         ),
         compilerOptions: {
-            outDir: './lib',
-            rootDir: './src',
-            composite: true
+            outDir: "./lib",
+            rootDir: "./src",
+            composite: true,
         },
-        include: ['src'],
-        exclude: ['test', 'lib'],
-        references: internalDependencies.map(dependencyName => {
+        include: ["src"],
+        exclude: ["test", "lib"],
+        references: internalDependencies.map((dependencyName) => {
             const dependencyPath = packagePathMap.get(dependencyName)!;
 
             return {
                 path: pathJoin(
                     pathRelative(packagePath, dependencyPath),
                     ConfigFilename.PACKAGE_TSCONFIG
-                )
+                ),
             };
-        })
+        }),
     };
 
     writeTsconfig(tsconfigPath, tsconfigData);
@@ -141,17 +125,18 @@ const tsconfigProjectPath = pathJoin(rootPath, ConfigFilename.PROJECT_TSCONFIG);
 
 const tsconfigProjectData = {
     files: [],
-    references: resolveInternalDependencies([...packagePathMap.keys()])
-        .map(dependencyName => {
+    references: resolveInternalDependencies([...packagePathMap.keys()]).map(
+        (dependencyName) => {
             const dependencyPath = packagePathMap.get(dependencyName)!;
 
             return {
                 path: pathJoin(
                     pathRelative(rootPath, dependencyPath),
                     ConfigFilename.PACKAGE_TSCONFIG
-                )
+                ),
             };
-        })
+        }
+    ),
 };
 
 writeTsconfig(tsconfigProjectPath, tsconfigProjectData);
