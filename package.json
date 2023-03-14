@@ -1,4 +1,5 @@
 {
+    "name": "@rubric/monorepo",
     "private": true,
     "version": "0.0.1",
     "workspaces": [
@@ -30,5 +31,6 @@
         "typescript:watch": "npm run typescript:build -- --watch",
         "typescript:clean": "rm -rf ./{packages,shared}/*/{lib,*.tsbuildinfo}",
         "update:tsconfig": "ts-node-esm scripts/update-package-tsconfig.ts"
-    }
+    },
+    "packageManager": "yarn@3.4.1"
 }
