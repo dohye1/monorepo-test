@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react';
 import { ColumnDef, createColumnHelper } from '@tanstack/react-table';
 import { useState } from 'react';
 import styled from 'styled-components';
-import { Heading } from '../@foundations/Typography';
+import { Heading } from '@template/foundation';
 import { Avatar } from '../Avatar';
 import { Badge } from '../Badge';
 import { Checkbox } from '../Checkbox';

@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { COLORS } from '../@foundations/Colors';
+import { COLORS } from '@template/foundation';
 
 export type CommonStyles = typeof commonStyles;
 

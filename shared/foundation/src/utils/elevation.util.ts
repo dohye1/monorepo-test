@@ -1,7 +1,6 @@
-import { ELEVATION } from "../Elevation";
-import { Elevation } from "../Elevation/elevation";
+import { ELEVATION, ElevationEnum } from "../Elevation";
 
-export const getElevation = (elevation: Elevation) => {
+export const getElevation = (elevation: ElevationEnum) => {
     switch (elevation) {
         case 0:
             return ELEVATION.elevation0;

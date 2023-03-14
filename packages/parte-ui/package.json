@@ -23,7 +23,7 @@
   },
   "peerDependencies": {
     "@template/parte-icons": "*",
-    "@template/shared-template": "*",
+    "@template/foundation": "*",
     "react": ">= 16.8.0",
     "react-dom": ">= 16.8.0",
     "styled-components": ">= 5.3.3"

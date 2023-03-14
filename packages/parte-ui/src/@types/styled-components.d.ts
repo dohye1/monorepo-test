@@ -1,10 +1,12 @@
 import 'styled-components';
-import { Colors } from '../@foundations/Colors/colors.types';
-import { Elevation } from '../@foundations/Elevation/elevation.types';
-import { Spacing } from '../@foundations/Spacing/spacing.types';
-import { Typography } from '../@foundations/Typography/typography.types';
-import { CommonStyles } from '../common/commonStyles';
-import { ColorTokenType } from '../common/theme/colorToken';
+import {
+  Colors,
+  Elevation,
+  Spacing,
+  Typography,
+  CommonStyles,
+  ColorTokenType,
+} from '@template/foundation';
 
 declare module 'styled-components' {
   interface DefaultTheme extends ColorTokenType {

@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { ThemeProvider as DefaultThemeProvider } from "styled-components";
-import { Colors } from "../@foundations/Colors/colors.types";
+import { Colors } from "./Colors/colors.types";
 import { ColorTokenType } from "./theme/colorToken";
 import { cloneDeep } from "lodash";
 import defaultTheme from "./theme/index";

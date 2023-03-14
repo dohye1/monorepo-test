@@ -4,8 +4,8 @@ import {
   FlattenInterpolation,
   ThemedStyledProps,
 } from 'styled-components';
-import { Elevation } from '../@foundations/Elevation/elevation';
-import { SPACING } from '../@foundations/Spacing';
+import { ElevationEnum } from '@template/foundation';
+import { SPACING } from '@template/foundation';
 import { Spacing } from '../@foundations/Spacing/spacing.types';
 import {
   Display,
@@ -59,7 +59,7 @@ export type BoxProps = HTMLAttributes<HTMLDivElement> & {
   marginLeft?: number;
   marginRight?: number;
 
-  elevation?: Elevation;
+  elevation?: ElevationEnum;
 
   /**
    * @uxpinignoreprop

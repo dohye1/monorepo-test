@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react';
-import { Paragraph } from '../@foundations/Typography';
+import { Paragraph } from '@template/foundation';
 import { Box } from '../Layout';
 import Link from './Link';
 import { LinkProps } from './Link.types';

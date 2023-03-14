@@ -1,9 +1,11 @@
-import { COLORS } from '../../@foundations/Colors';
-import { SPACING } from '../../@foundations/Spacing';
-import { TYPOGRAPHY } from '../../@foundations/Typography';
-import { ELEVATION } from '../../@foundations/Elevation';
-import { commonStyles } from '../commonStyles';
-import { colorTokens } from './colorToken';
+import {
+  COLORS,
+  SPACING,
+  TYPOGRAPHY,
+  ELEVATION,
+  commonStyles,
+  colorTokens,
+} from '@template/foundation';
 
 const theme = {
   colors: COLORS,

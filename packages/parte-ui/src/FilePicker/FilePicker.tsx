@@ -2,7 +2,7 @@ import { FilePickerProps } from './FilePicker.types';
 import * as Styled from './FilePicker.styled';
 import { ChangeEvent, useCallback, useRef, useState } from 'react';
 import { Box } from '../Layout';
-import { Caption, Paragraph } from '../@foundations/Typography';
+import { Caption, Paragraph } from '@template/foundation';
 import TextInput from '../TextInput';
 
 const defaultButtonText = (files: File[]) => {

@@ -1,7 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styled, { css, DefaultTheme } from 'styled-components';
 import { Box } from '../Layout';
-import { IconColor } from '../parte-icons/component/Icon';
+import { IconColor } from '@template/parte-icons/src/common/Icon';
 import { AlertProps } from './Alert.types';
 
 export const getColorByStatus = (

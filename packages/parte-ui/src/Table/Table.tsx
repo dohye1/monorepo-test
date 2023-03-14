@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Paragraph } from '../@foundations/Typography';
+import { Paragraph } from '@template/foundation';
 import Dropdown from '../Dropdown';
 import { Box } from '../Layout';
 import { BoxProps } from '../Layout/Box.types';

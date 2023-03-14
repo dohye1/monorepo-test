@@ -5,7 +5,7 @@ import {
   FlattenInterpolation,
   ThemedStyledProps,
 } from 'styled-components';
-import { Elevation } from '../@foundations/Elevation/elevation';
+import { Elevation } from '@template/foundation';
 import { ButtonVariant } from '../Button/Button.types';
 import { BoxProps } from '../Layout/Box.types';
 

@@ -1,5 +1,5 @@
 import { HTMLAttributes } from 'react';
-import { BadgeColors } from '../@foundations/Badge/badge.types';
+import { BadgeColors } from '@template/foundation';
 
 type BadgeType = 'badge' | 'pills';
 
