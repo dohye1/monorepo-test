@@ -20,7 +20,7 @@
         "push_by_version": "yarn push --token --tag $npm_package_version",
         "chromatic": "chromatic --exit-zero-on-changes"
     },
-    "dependencies": {
+    "peerDependencies": {
         "@template/foundation": "*",
         "react": ">= 16.8.0"
     },

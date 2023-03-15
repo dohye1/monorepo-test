@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react-jsx",
-    "outDir": "dist",
+    "outDir": "dist"
   },
   "include": [".storybook/*", "**/*.ts", "**/*.tsx"],
   "exclude": ["**/tests", "**/*.test.ts"],
