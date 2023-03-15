@@ -1,14 +1,6 @@
-# Parte UI
+# Parte Icons
 
-Design system for Rubric Labs
-
-## Todo
-
-- [ ] Typography
-- [ ] Card
-- [ ] Pagination
-- [ ] FilePicker
-- [ ] Select
+Icons for Parte design system
 
 ## Documentation & Storybook
 
