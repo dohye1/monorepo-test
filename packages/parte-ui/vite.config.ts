@@ -19,13 +19,10 @@ export default defineConfig({
     }),
     react(),
   ],
-  optimizeDeps: {
-    include: ['@vite-mono/lib-cjs'],
-  },
   build: {
     lib: {
       entry: path.resolve('src', 'index.ts'),
-      name: 'parte-ui',
+      name: '@template/parte-ui',
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
