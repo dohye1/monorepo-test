@@ -20,9 +20,6 @@ export default defineConfig({
         }),
         react(),
     ],
-    optimizeDeps: {
-        include: ['@template/parte-icons', '@template/foundation'],
-    },
     build: {
         lib: {
             entry: path.resolve('src', 'index.ts'),
@@ -34,9 +31,6 @@ export default defineConfig({
             // external: 라이브러리에 포함하지 않을 디펜던시를 명시해주세요
             external: [...Object.keys(pkg.peerDependencies)],
             plugins: [resolve({ extensions }), json()],
-        },
-        commonjsOptions: {
-            include: [/lib-cjs/, /node_modules/],
         },
     },
 });
