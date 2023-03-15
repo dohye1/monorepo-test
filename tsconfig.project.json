@@ -9,9 +9,6 @@
 			"path": "packages/parte-icons/tsconfig.package.json"
 		},
 		{
-			"path": "packages/component/tsconfig.package.json"
-		},
-		{
 			"path": "packages/parte-ui/tsconfig.package.json"
 		},
 		{
