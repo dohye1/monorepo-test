@@ -14,23 +14,24 @@ import dts from 'vite-plugin-dts';
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default defineConfig({
-    plugins: [
-        dts({
-            include: ['src/'],
-        }),
-        react(),
-    ],
-    build: {
-        lib: {
-            entry: path.resolve('src', 'index.ts'),
-            name: 'parte-icons',
-            formats: ['es', 'umd'],
-            fileName: (format) => `index.${format}.js`,
-        },
-        rollupOptions: {
-            // external: 라이브러리에 포함하지 않을 디펜던시를 명시해주세요
-            external: [...Object.keys(pkg.peerDependencies)],
-            plugins: [resolve({ extensions }), json()],
-        },
+  plugins: [
+    dts({
+      include: ['src/'],
+      entryRoot: 'src',
+    }),
+    react(),
+  ],
+  build: {
+    lib: {
+      entry: path.resolve('src', 'index.ts'),
+      name: '@template/parte-icons',
+      formats: ['es', 'umd'],
+      fileName: (format) => `index.${format}.js`,
     },
+    rollupOptions: {
+      // external: 라이브러리에 포함하지 않을 디펜던시를 명시해주세요
+      external: [...Object.keys(pkg.peerDependencies)],
+      plugins: [resolve({ extensions }), json()],
+    },
+  },
 });
