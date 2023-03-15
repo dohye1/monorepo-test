@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react';
-import { IconProps } from '../parte-icons/component/Icon';
+import { IconProps } from '@template/parte-icons/src/common/Icon';
 
 export type IconButtonProps = HTMLAttributes<HTMLButtonElement> & {
   variant: 'primary' | 'secondary' | 'minimal' | 'error';

@@ -5,7 +5,7 @@ import {
   FlattenInterpolation,
   ThemedStyledProps,
 } from 'styled-components';
-import { Elevation } from '@template/foundation';
+import { ElevationEnum } from '@template/foundation';
 import { ButtonVariant } from '../Button/Button.types';
 import { BoxProps } from '../Layout/Box.types';
 
@@ -32,7 +32,7 @@ export interface DialogProps {
   isConfirmLoading?: boolean;
   minHeightContent?: number;
   width?: number;
-  elevation?: Elevation;
+  elevation?: ElevationEnum;
   state?: TransitionStatus;
   overrideStyles?: FlattenInterpolation<
     ThemedStyledProps<BoxProps, DefaultTheme>
