@@ -14,7 +14,7 @@ const commonCodeStyle = css`
   border-radius: 4px;
 `;
 
-const Typography = {
+const typography = {
   H900: css`
     ${commonBaseTextStyle}
     font-weight: 600;
@@ -113,4 +113,4 @@ const Typography = {
   `,
 };
 
-export default Typography;
+export default typography;

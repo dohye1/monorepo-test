@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import { CSSProperties } from 'styled-components';
-import { Colors } from '@template/foundation';
-import typography from './typography';
+import { Colors, typography } from '@template/foundation';
 
 export type Typography = typeof typography;
 

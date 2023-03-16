@@ -2,7 +2,7 @@ import { Story, Meta } from '@storybook/react';
 import { useState } from 'react';
 import { css } from 'styled-components';
 import Button from '../Button';
-import theme from '../common/theme';
+import theme from '../theme';
 import { Box } from '../Layout';
 import DialogModal from './DialogModal';
 import { DialogModalProps } from './DialogModal.types';

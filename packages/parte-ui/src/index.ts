@@ -1,5 +1,7 @@
 /** 공용 */
-export { default as theme } from './common/theme';
+export { default as theme } from './theme';
+export { default as styleReset } from './styleReset';
+export { default as ThemeProvider } from './ThemeProvider';
 
 /** 컴포넌트 */
 export * from './Alerts';

@@ -1,7 +1,7 @@
 {
   "name": "@template/parte-ui",
   "private": true,
-  "version": "0.2.5",
+  "version": "0.2.7",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "typings": "./dist/index.d.ts",

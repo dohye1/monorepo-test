@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { getColors } from '../common/utils/badge.utils';
+import { getColors } from '../utils/badge.utils';
 import { Box } from '../Layout';
 import { BadgeProps } from './Badge.types';
 

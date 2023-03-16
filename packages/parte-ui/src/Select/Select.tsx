@@ -35,7 +35,7 @@ import useSelectStyle from './useSelectStyle';
 import { SelectProps } from './Select.types';
 import { SelectComponents } from 'react-select/dist/declarations/src/components';
 import { Box } from '../Layout';
-import { Caption, Heading, Paragraph } from '@template/foundation';
+import { Caption, Heading, Paragraph } from '../Typography';
 import { Spinner } from '../Spinner';
 
 export const Control = ({

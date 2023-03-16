@@ -4,7 +4,7 @@ import { PaginationProps } from './Pagination.types';
 import InterfaceChevronLeftIcon from '@template/parte-icons/src/Icons/InterfaceChevronLeftIcon';
 import InterfaceChevronRightIcon from '@template/parte-icons/src/Icons/InterfaceChevronRightIcon';
 import { Box } from '../Layout';
-import { Heading } from '@template/foundation';
+import { Heading } from '../Typography';
 import { IconButton } from '../IconButton';
 
 const MAX_HANDLES_TO_SHOW = 7;

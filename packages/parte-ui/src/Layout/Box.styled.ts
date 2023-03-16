@@ -1,10 +1,10 @@
 import { css } from 'styled-components';
-import { getElevation } from '../common/utils/elevation.util';
+import { getElevation } from '../utils/elevation.util';
 import {
   getWidthStyle,
   getFlexBasisStyle,
   getHeightStyle,
-} from '../common/utils/style.util';
+} from '../utils/style.util';
 import { BoxProps } from './Box.types';
 
 export const commonBoxStyle = css<BoxProps>`

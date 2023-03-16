@@ -1,8 +1,5 @@
 import styled, { css } from 'styled-components';
-import {
-  getColors,
-  getAvatarInitialsFontSize,
-} from '../common/utils/badge.utils';
+import { getColors, getAvatarInitialsFontSize } from '../utils/badge.utils';
 import { Box } from '../Layout';
 import { AvatarProps } from './Avatar.types';
 

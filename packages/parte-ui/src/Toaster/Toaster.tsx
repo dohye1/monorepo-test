@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from '@template/foundation';
-import theme from '../common/theme';
+import ThemeProvider from '../ThemeProvider';
+import theme from '../theme';
 import { NotifyHandler, RemoveHandler } from './Toaster.types';
 import ToastManager from './ToastManager';
 
