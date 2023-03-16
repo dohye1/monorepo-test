@@ -4437,32 +4437,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@template/foundation@workspace:shared/foundation"
   dependencies:
-    "@babel/core": ^7.19.6
-    "@rollup/plugin-json": ^5.0.1
+    "@rollup/plugin-json": ^6.0.0
     "@rollup/plugin-node-resolve": ^15.0.1
-    "@storybook/addon-actions": ^6.5.16
-    "@storybook/addon-essentials": ^6.5.16
-    "@storybook/addon-interactions": ^6.5.16
-    "@storybook/addon-links": ^6.5.16
-    "@storybook/react": ^6.5.16
-    "@storybook/testing-library": ^0.0.13
-    "@types/lodash": ^4.14.191
-    "@types/node": ^18.11.9
-    "@types/react": ^18.0.22
-    "@types/react-dom": ^18.0.7
-    "@types/styled-components": ^5.1.26
-    chromatic: ^6.11.4
-    lodash: ^4.17.21
+    "@template/foundation": "workspace:^"
+    "@types/react": ^18.0.28
+    "@vitejs/plugin-react": ^3.1.0
     react: ^18.2.0
-    shallowequal: ^1.1.0
-    storybook: ^6.5.16
-    styled-components: ^5.3.6
-    ts-loader: ^8.1.0
-    uuid: ^9.0.0
-  peerDependencies:
-    react: ">= 16.8.0"
-    react-dom: ">= 16.8.0"
-    styled-components: ">= 5.3.3"
+    vite: ^4.1.4
+    vite-plugin-dts: ^2.1.0
   languageName: unknown
   linkType: soft
 
@@ -4540,12 +4522,6 @@ __metadata:
     react: ">= 16.8.0"
     react-dom: ">= 16.8.0"
     styled-components: ">= 5.3.3"
-  languageName: unknown
-  linkType: soft
-
-"@template/shared-template@workspace:shared/shared-template":
-  version: 0.0.0-use.local
-  resolution: "@template/shared-template@workspace:shared/shared-template"
   languageName: unknown
   linkType: soft
 
@@ -4872,7 +4848,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.167, @types/lodash@npm:^4.14.191":
+"@types/lodash@npm:^4.14.167":
   version: 4.14.191
   resolution: "@types/lodash@npm:4.14.191"
   checksum: ba0d5434e10690869f32d5ea49095250157cae502f10d57de0a723fd72229ce6c6a4979576f0f13e0aa9fbe3ce2457bfb9fa7d4ec3d6daba56730a51906d1491

@@ -1,15 +1,15 @@
 {
-    "extends": "./tsconfig.base.json",
-    "compilerOptions": {
-        "noEmit": true,
-        "baseUrl": ".",
-        "paths": {
-            "@template/*": [
-                "./shared/foundation/src",
-                "./packages/parte-ui/src",
-                "./packages/parte-icons/src"
-            ],
-            "@parte/foundation/*": ["./shared/foundation/src"]
-        }
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@template/*": [
+        "./shared/foundation/src",
+        "./packages/parte-ui/src",
+        "./packages/parte-icons/src"
+      ],
+      "@parte/foundation/*": ["./shared/foundation/src"]
     }
+  }
 }

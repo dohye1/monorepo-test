@@ -1,6 +1,6 @@
 import { Heading, Paragraph, Caption, Code } from './index';
 import { Story, Meta } from '@storybook/react';
-import { Box } from '../../Layout';
+import { Box } from '../Layout';
 
 export default {
   title: 'Foundation/Typography',

@@ -22,7 +22,12 @@
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react-jsx",
-    "outDir": "dist"
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@template/foundation": ["../shared/foundation/src"],
+      "@template/parte-icons": ["./parte-icons/src"]
+    }
   },
   "include": [".storybook/*", "**/*.ts", "**/*.tsx"],
   "exclude": ["**/tests", "**/*.test.ts"],

@@ -16,6 +16,10 @@
     "noEmit": false,
     "jsx": "react-jsx",
     "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@template/foundation": ["../shared/foundation/src"]
+    }
   },
   "include": [".storybook/*", "**/*.ts", "**/*.tsx"],
   "exclude": ["**/tests", "**/*.test.ts"],
