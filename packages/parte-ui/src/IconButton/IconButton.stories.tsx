@@ -1,7 +1,7 @@
 import IconButton from './IconButton';
 import { Story, Meta } from '@storybook/react';
 import { IconButtonProps } from './IconButton.types';
-import { ActionAddIcon } from '@template/parte-icons/src';
+import { ActionAddIcon } from '@parte/icons';
 
 export default {
   title: 'Components/Buttons/IconButton',

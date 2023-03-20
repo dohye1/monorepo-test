@@ -26,7 +26,7 @@
     "baseUrl": ".",
     "paths": {
       "@template/foundation": ["../shared/foundation/src"],
-      "@template/parte-icons": ["./parte-icons/src"]
+      "@parte/icons": ["./parte-icons/dist"]
     }
   },
   "include": [".storybook/*", "**/*.ts", "**/*.tsx"],

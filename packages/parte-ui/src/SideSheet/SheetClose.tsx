@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import ActionCrossIcon from '@template/parte-icons/src/Icons/ActionCrossIcon';
+import { ActionCrossIcon } from '@parte/icons';
 import * as Styled from './SideSheet.styled';
 import { SideCloseProps } from './SideSheet.types';
 

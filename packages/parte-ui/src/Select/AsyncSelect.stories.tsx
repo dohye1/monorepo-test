@@ -8,7 +8,7 @@ import {
 import Select from './Select';
 import { AsyncSelectProps, SelectAdditional } from './Select.types';
 import { useState } from 'react';
-import ActionAddIcon from '@template/parte-icons/src/Icons/ActionAddIcon';
+import { ActionAddIcon } from '@parte/icons';
 
 export default {
   title: 'Components/Select/AsyncSelect',
@@ -162,8 +162,9 @@ const GroupTemplate: Story<
     };
   };
 
-  const [selectedValue, setSelectedValue] =
-    useState<Option<string>[] | SingleValue<Option<string>> | undefined>();
+  const [selectedValue, setSelectedValue] = useState<
+    Option<string>[] | SingleValue<Option<string>> | undefined
+  >();
 
   const onChange = (
     option: MultiValue<Option<string>> | SingleValue<Option<string>>

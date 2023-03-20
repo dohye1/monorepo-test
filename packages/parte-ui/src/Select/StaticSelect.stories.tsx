@@ -3,7 +3,7 @@ import { MultiValue, SingleValue } from 'react-select';
 import Select from './Select';
 import { StaticSelectProps } from './Select.types';
 import { useState } from 'react';
-import ActionAddIcon from '@template/parte-icons/src/Icons/ActionAddIcon';
+import { ActionAddIcon } from '@parte/icons';
 
 export default {
   title: 'Components/Select/StaticSelect',
@@ -29,8 +29,9 @@ const Template: Story<
     isDisabled?: boolean;
   }
 > = ({ isMulti, ...args }) => {
-  const [selectedValue, setSelectedValue] =
-    useState<Option<string>[] | SingleValue<Option<string>> | undefined>();
+  const [selectedValue, setSelectedValue] = useState<
+    Option<string>[] | SingleValue<Option<string>> | undefined
+  >();
 
   const onChange = (
     option: MultiValue<Option<string>> | SingleValue<Option<string>>
@@ -120,8 +121,9 @@ const GroupTemplate: Story<
     }));
   })();
 
-  const [selectedValue, setSelectedValue] =
-    useState<Option<string>[] | SingleValue<Option<string>> | undefined>();
+  const [selectedValue, setSelectedValue] = useState<
+    Option<string>[] | SingleValue<Option<string>> | undefined
+  >();
 
   const onChange = (
     option: MultiValue<Option<string>> | SingleValue<Option<string>>

@@ -1,4 +1,4 @@
-import ActionTickIcon from '@template/parte-icons/src/Icons/ActionTickIcon';
+import { ActionTickIcon } from '@parte/icons';
 import { MenuRow } from '../MenuRow';
 import * as Styled from './MenuOptionsGroup.styled';
 import { MenuOptionsGroupProps } from './MenuOptionsGroup.types';

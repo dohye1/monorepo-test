@@ -4,8 +4,7 @@ import Dropdown from '../Dropdown';
 import { Box } from '../Layout';
 import { BoxProps } from '../Layout/Box.types';
 import { Menu } from '../Menu';
-import ActionFilterIcon from '@template/parte-icons/src/Icons/ActionFilterIcon';
-import InterfaceCaretDownIcon from '@template/parte-icons/src/Icons/InterfaceCaretDownIcon';
+import { ActionFilterIcon, InterfaceCaretDownIcon } from '@parte/icons';
 import * as Styled from './Table.styled';
 import {
   BodyProps,

@@ -4,7 +4,7 @@ import { TabsProps } from './Tabs.types';
 import { useState } from 'react';
 import Tab from './Tab/Tab';
 import { TabVariant } from './Tab/Tab.types';
-import ActionTickIcon from '@template/parte-icons/src/Icons/ActionTickIcon';
+import { ActionTickIcon } from '@parte/icons';
 import { SidebarTab } from './SidebarTab';
 import { Box } from '../Layout';
 

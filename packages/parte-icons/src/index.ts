@@ -502,3 +502,4 @@ export { default as TableThFilteredIcon } from './Icons/TableThFilteredIcon';
 export { default as TableThIcon } from './Icons/TableThIcon';
 export { default as TableThListIcon } from './Icons/TableThListIcon';
 export { default as TableVariableIcon } from './Icons/TableVariableIcon';
+export * from './common/Icon';

@@ -23,7 +23,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve('src', 'index.ts'),
-      name: '@template/parte-ui',
+      name: '@parte/ui',
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },

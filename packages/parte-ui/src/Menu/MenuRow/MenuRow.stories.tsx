@@ -1,7 +1,7 @@
 import MenuRow from './MenuRow';
 import { Story, Meta } from '@storybook/react';
 import { MenuRowProps } from './MenuRow.types';
-import ActionChatIcon from '@template/parte-icons/src/Icons/ActionChatIcon';
+import { ActionChatIcon } from '@parte/icons';
 import { useState } from 'react';
 
 export default {

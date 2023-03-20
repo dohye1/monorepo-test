@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { css } from 'styled-components';
 import Button from '../Button';
 import { IconButton } from '../IconButton';
-import ActionCrossIcon from '@template/parte-icons/src/Icons/ActionCrossIcon';
+import { ActionCrossIcon } from '@parte/icons';
 import * as Styled from './Dialog.styled';
 import { DialogProps, DialogSubComponent } from './Dialog.types';
 

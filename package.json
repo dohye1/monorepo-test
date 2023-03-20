@@ -1,42 +1,42 @@
 {
-    "name": "@rubric/monorepo",
-    "private": true,
-    "workspaces": [
-        "packages/*",
-        "shared/*"
-    ],
-    "devDependencies": {
-        "@types/jest": "^28.1.1",
-        "@types/node": "^17.0.42",
-        "@typescript-eslint/eslint-plugin": "^5.27.1",
-        "@typescript-eslint/parser": "^5.27.1",
-        "@yarnpkg/plugin-typescript": "^4.0.0-rc.40",
-        "@yarnpkg/sdks": "^3.0.0-rc.40",
-        "eslint": "^8.36.0",
-        "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-plugin-import": "^2.26.0",
-        "jest": "^28.1.1",
-        "prettier": "^2.8.4",
-        "ts-jest": "^28.0.4",
-        "ts-node": "^10.8.1",
-        "typescript": "4.8.4"
-    },
-    "scripts": {
-        "build": "npm run typescript:build",
-        "ui": "yarn workspace @template/parte-ui",
-        "icons": "yarn workspace @template/parte-icons",
-        "foundation": "yarn workspace @template/foundation",
-        "build-monorepo": "yarn workspaces foreach -ptR --from \"{@template/components,@template/parte-icons}\" run build && yarn ui build",
-        "watch": "npm run typescript:watch",
-        "clean": "npm run typescript:clean",
-        "test": "npm run lint:eslint && npm run test:jest",
-        "test:jest": "NODE_OPTIONS=--experimental-vm-modules jest --config jest.config.json --no-cache",
-        "lint": "npm run lint:eslint",
-        "lint:eslint": "eslint --ignore-path .gitignore {packages,shared}/*/src/**/*.ts",
-        "typescript:build": "tsc --build ./tsconfig.project.json",
-        "typescript:watch": "npm run typescript:build -- --watch",
-        "typescript:clean": "rm -rf ./{packages,shared}/*/{lib,*.tsbuildinfo}",
-        "update:tsconfig": "ts-node-esm scripts/update-package-tsconfig.ts"
-    },
-    "packageManager": "yarn@3.4.1"
+  "name": "@rubric/monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "shared/*"
+  ],
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@types/node": "^17.0.42",
+    "@typescript-eslint/eslint-plugin": "^5.27.1",
+    "@typescript-eslint/parser": "^5.27.1",
+    "@yarnpkg/plugin-typescript": "^4.0.0-rc.40",
+    "@yarnpkg/sdks": "^3.0.0-rc.40",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.8.4",
+    "ts-jest": "^28.0.4",
+    "ts-node": "^10.8.1",
+    "typescript": "4.8.4"
+  },
+  "scripts": {
+    "build": "npm run typescript:build",
+    "ui": "yarn workspace @parte/ui",
+    "icons": "yarn workspace @parte/icons",
+    "foundation": "yarn workspace @template/foundation",
+    "build-monorepo": "yarn workspaces foreach -ptR --from \"{@parte/ui,@parte/icons}\" run build && yarn ui build",
+    "watch": "npm run typescript:watch",
+    "clean": "npm run typescript:clean",
+    "test": "npm run lint:eslint && npm run test:jest",
+    "test:jest": "NODE_OPTIONS=--experimental-vm-modules jest --config jest.config.json --no-cache",
+    "lint": "npm run lint:eslint",
+    "lint:eslint": "eslint --ignore-path .gitignore {packages,shared}/*/src/**/*.ts",
+    "typescript:build": "tsc --build ./tsconfig.project.json",
+    "typescript:watch": "npm run typescript:build -- --watch",
+    "typescript:clean": "rm -rf ./{packages,shared}/*/{lib,*.tsbuildinfo}",
+    "update:tsconfig": "ts-node-esm scripts/update-package-tsconfig.ts"
+  },
+  "packageManager": "yarn@3.4.1"
 }
