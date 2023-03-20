@@ -1,4 +1,4 @@
-import { DROPDOWN_POSITION } from '../constant';
+import { DROPDOWN_POSITION } from '@parte/foundation';
 
 declare global {
   type Option<T> = {

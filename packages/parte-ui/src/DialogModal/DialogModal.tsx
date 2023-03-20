@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { css, keyframes } from 'styled-components';
-import { animationEasing } from '../constant';
+import { animationEasing } from '@parte/foundation';
 import Dialog from '../Dialog/Dialog';
 import { Overlay } from '../Overlay';
 import { DialogModalProps } from './DialogModal.types';

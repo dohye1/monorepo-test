@@ -13,7 +13,7 @@ import {
   AlignContent,
   FlexWrap,
   AlignSelf,
-} from '../constant';
+} from '@parte/foundation';
 
 export type BoxProps = HTMLAttributes<HTMLDivElement> & {
   display?: Display;

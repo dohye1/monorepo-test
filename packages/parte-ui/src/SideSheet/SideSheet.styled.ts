@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
-import { animationEasing } from '../constant';
+import { animationEasing } from '@parte/foundation';
 import { Box } from '../Layout';
 
 const { deceleration, acceleration } = animationEasing;
