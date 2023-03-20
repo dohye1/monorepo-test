@@ -1,5 +1,5 @@
 import { GlobalStyle } from './decorators/GlobalStyles';
-import { ThemeProvider } from '@template/foundation';
+import { ThemeProvider } from '@parte/foundation';
 
 export const decorators = [
   (Story) => {

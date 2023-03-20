@@ -18,7 +18,7 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "@template/foundation": ["../shared/foundation/src"]
+      "@parte/foundation": ["../shared/foundation/src"]
     }
   },
   "include": [".storybook/*", "**/*.ts", "**/*.tsx"],

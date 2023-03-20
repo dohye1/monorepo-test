@@ -1,5 +1,5 @@
 {
-  "name": "@template/foundation",
+  "name": "@parte/foundation",
   "private": true,
   "version": "0.0.0",
   "main": "./dist/index.umd.js",

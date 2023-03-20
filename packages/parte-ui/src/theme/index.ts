@@ -5,7 +5,7 @@ import {
   typography,
   SPACING,
   COLORS,
-} from '@template/foundation';
+} from '@parte/foundation';
 
 const theme = {
   colors: COLORS,

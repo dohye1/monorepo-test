@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { styleReset } from '@template/foundation';
+import { styleReset } from '@parte/foundation';
 
 export const GlobalStyle = createGlobalStyle`
   *, *::before, *::after {

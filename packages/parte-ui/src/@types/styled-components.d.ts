@@ -6,7 +6,7 @@ import {
   Typography,
   CommonStyles,
   ColorTokenType,
-} from '@template/foundation';
+} from '@parte/foundation';
 
 declare module 'styled-components' {
   interface DefaultTheme extends ColorTokenType {

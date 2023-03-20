@@ -1,4 +1,4 @@
-import { ELEVATION, ElevationEnum } from '@template/foundation';
+import { ELEVATION, ElevationEnum } from '@parte/foundation';
 
 export const getElevation = (elevation: ElevationEnum) => {
   switch (elevation) {

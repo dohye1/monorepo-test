@@ -2849,6 +2849,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@parte/foundation@workspace:shared/foundation":
+  version: 0.0.0-use.local
+  resolution: "@parte/foundation@workspace:shared/foundation"
+  dependencies:
+    "@rollup/plugin-json": ^6.0.0
+    "@rollup/plugin-node-resolve": ^15.0.1
+    "@types/react": ^18.0.28
+    "@vitejs/plugin-react": ^3.1.0
+    react: ^18.2.0
+    vite: ^4.1.4
+    vite-plugin-dts: ^2.1.0
+  languageName: unknown
+  linkType: soft
+
 "@parte/icons@workspace:packages/parte-icons":
   version: 0.0.0-use.local
   resolution: "@parte/icons@workspace:packages/parte-icons"
@@ -4504,20 +4518,6 @@ __metadata:
   checksum: 78d2314928c29559088e4bada0248cc7f94e93756e1a2c1f37a651db30276e9ae960d647bd3a61b67b3f0f9f7e4dec5dd58eb49b8adb80ee5952ef417b6e581f
   languageName: node
   linkType: hard
-
-"@template/foundation@workspace:shared/foundation":
-  version: 0.0.0-use.local
-  resolution: "@template/foundation@workspace:shared/foundation"
-  dependencies:
-    "@rollup/plugin-json": ^6.0.0
-    "@rollup/plugin-node-resolve": ^15.0.1
-    "@types/react": ^18.0.28
-    "@vitejs/plugin-react": ^3.1.0
-    react: ^18.2.0
-    vite: ^4.1.4
-    vite-plugin-dts: ^2.1.0
-  languageName: unknown
-  linkType: soft
 
 "@testing-library/dom@npm:^8.3.0":
   version: 8.20.0

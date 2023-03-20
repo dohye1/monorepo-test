@@ -1,5 +1,5 @@
 import React, { CSSProperties, DetailedHTMLProps } from 'react';
-import { COLORS } from '@template/foundation';
+import { COLORS } from '@parte/foundation';
 
 type Status = 'success' | 'info' | 'warning' | 'error';
 

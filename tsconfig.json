@@ -6,7 +6,7 @@
     "paths": {
       "@parte/ui": ["./packages/parte-ui/dist"],
       "@parte/icons": ["./packages/parte-icons/dist"],
-      "@template/*": ["./shared/foundation/src"]
+      "@parte/foundation": ["./shared/foundation/dist"]
     }
   }
 }

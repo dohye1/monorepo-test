@@ -23,7 +23,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve('src', 'index.ts'),
-      name: '@template/foundation',
+      name: '@parte/foundation',
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },

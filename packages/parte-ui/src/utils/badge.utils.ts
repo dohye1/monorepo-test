@@ -1,4 +1,4 @@
-import { BadgeColors, BADGE_COLOR } from '@template/foundation';
+import { BadgeColors, BADGE_COLOR } from '@parte/foundation';
 
 export const getInitial = (name: string, fallback = '?') => {
   if (!name) return fallback;

@@ -4,9 +4,7 @@ import {
   FlattenInterpolation,
   ThemedStyledProps,
 } from 'styled-components';
-import { ElevationEnum } from '@template/foundation';
-import { SPACING } from '@template/foundation';
-import { Spacing } from '../@foundations/Spacing/spacing.types';
+import { ElevationEnum, SPACING, Spacing } from '@parte/foundation';
 import {
   Display,
   FlexDirection,

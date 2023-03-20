@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { COLORS } from '@template/foundation';
+import { COLORS } from '@parte/foundation';
 
 export const badgeColors = {
   NEUTRAL: css`
