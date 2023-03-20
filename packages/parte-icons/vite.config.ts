@@ -22,7 +22,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve('src', 'index.ts'),
-      name: 'parte-icons',
+      name: '@parte/icons',
       formats: ['es', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
